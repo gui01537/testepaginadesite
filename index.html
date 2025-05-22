@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Dona Irene</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ff41a1;
+            color: #f9f9f9;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 22%;
+            margin: 10px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product h3 {
+            font-size: 1.5em;
+            color: #ff41a1;
+            margin: 15px 0;
+        }
+
+        .product p {
+            font-size: 1.1em;
+            color: #666;
+            padding: 0 15px;
+        }
+
+        .product .price {
+            font-size: 1.3em;
+            color: #ff41a1;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .whatsapp-button {
+            display: block;
+            background-color: #ff41a1;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 0 0 15px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #000000;
+        }
+
+        .about-section {
+            background-color: #ff41a1;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 15px;
+        }
+
+        .about-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .about-section a {
+            background-color: white;
+            color: #ff41a1;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-section a:hover {
+            background-color: #000000;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.1em;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ff41a1;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Delícias da Dona Irene</h1>
+        <p>Bolos artesanais, Salgados e Doces feitos com carinho e qualidade.</p>
+    </header>
+
+    <!-- Seção Principal -->
+    <div class="main-container">
+
+        <!-- Seção de Produtos -->
+        <div class="product-section">
+            <div class="product">
+                <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2022/10/04101905/Bolo-de-chocolate-2.webp" alt="Bolo de Chocolate">
+                <h3>Bolos</h3>
+                <p>Bolos fofinhos com cobertura cremosa e recheio de ganache.</p>
+                <p class="price">R$ 60,90</p>
+                <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">Comprar Agora</a>
+            </div>
+
+            <div class="product">
+                <img src="https://supermercadobarbosa.loji.com.br/storage/uploads/PkIG5cMOKzCdQ1CLOKKEctuCYBjx0DuWPBtqyy08.jpg" alt="Salgados">
+                <h3>Salgados</h3>
+                <p>Pacote de salgados feitos com carinho pela Irene (Coxinhas, pastéis, kibes).</p>
+                <p class="price">R$ 40,90</p>
+                <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">Comprar Agora</a>
+            </div>
+
+            <div class="product">
+                <img src="https://blog.anagiovanna.com.br/wp-content/uploads/2020/02/doces-para-festa-docinhos-aniversario-infantil.jpg" alt="Doces">
+                <h3>Doces</h3>
+                <p>Pacote de doces feitos com carinho pela Irene.</p>
+                <p class="price">R$ 40,90</p>
+                <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">Comprar Agora</a>
+            </div>
+
+            <div class="product">
+                <img src="https://static.itdg.com.br/images/1200-675/bfbc5532e36840b2a57e3849d82ad7a5/355179-original.jpg" alt="Bolo no pote">
+                <h3>Bolo no pote</h3>
+                <p>O famoso bolo no pote com cobertura e recheio a gosto do cliente.</p>
+                <p class="price">R$ 8,90</p>
+                <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">Comprar Agora</a>
+            </div>
+        </div>
+
+        <!-- Seção Sobre -->
+        <div class="about-section">
+            <h2>Sobre o Nosso Negócio</h2>
+            <p>Há mais de 10 anos, nossa missão é trazer bolos deliciosos e frescos para você e sua família. Feitos com os melhores ingredientes, nossos bolos são feitos artesanalmente com muito amor e carinho.</p>
+            <a href="contato.html">Entre em Contato</a>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Delícias da Vovó - Todos os direitos reservados | <a href="privacy-policy.html">Política de Privacidade</a></p>
+    </footer>
+
+</body>
+</html>
